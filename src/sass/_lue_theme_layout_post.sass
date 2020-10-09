@@ -1,0 +1,35 @@
+.wy-menu-vertical
+
+  li
+    &.current
+      background: $menu-vertical-background-color
+      a
+        border-right: none
+        &:hover
+          background: $menu-vertical-background-color
+
+  li.toctree-l1.current > a
+    border-bottom: none
+    border-top: none
+
+  li.toctree-l2
+    &.current
+      > a
+        background: $menu-vertical-background-color
+      li.toctree-l3 > a
+        background: $menu-vertical-background-color
+
+  li.toctree-l3
+    &.current
+      > a
+        background: $menu-vertical-background-color
+      li.toctree-l4 > a
+        background: $menu-vertical-background-color
+
+  a
+    &:hover
+      background-color: $menu-background-color
+
+@media screen and (min-width: $nav-media-query)
+  .wy-nav-content-wrap
+    background: rgba(0,0,0,0)

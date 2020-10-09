@@ -1,7 +1,3 @@
-// Override some of the variables set in wy_variables.sass for our
-// theme. Mainly colours and fonts.
-
-
 // -----------------------------------------------------------------------------
 $nord0: #2e3440  /* Dark */
 $nord1: #3b4252  /* Lighter than nord0 */
@@ -35,7 +31,6 @@ $lue_border1: $lue_color1
 $lue_border2: $lue_color2
 // -----------------------------------------------------------------------------
 
-
 $text-color:                 $lue_color1
 
 $section-background-color:   $lue_background1
@@ -52,7 +47,7 @@ $link-color-hover:           $lue_link_color
 $link-color-alt:             $lue_link_color
 
 $table-stripe-color:         $lue_background2
-$table-border-color:         $lue_border1
+$table-border-color:         lighten($lue_border2, 50%)
 
 $text-dark:                  $lue_color1
 $text-medium:                $lue_color1
@@ -63,16 +58,9 @@ $input-shadow-color:         $lue_link_color
 
 $green:                      $nord14
 $offgreen:                   $nord14
-$blue:                       $nord9
+$blue:                       $nord10
 $purple:                     $nord15
 $cobalt:                     $nord10
 $yellow:                     $nord13
 $orange:                     $nord12
 $red:                        $nord11
-
-$background-color:      red
-$text-invert:           red
-$menu-top-link-color:   red
-$dropdown-color:        red
-$dropdown-border-color: red
-$shell:                 red
